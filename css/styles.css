@@ -13,7 +13,7 @@
     --network-border-color: #eeeeee;
     --hero-bag-color: #c4c4c4;
     --client-border-color: #afb1b8;
-    --bagcolor-network-link: rgba(255, 255, 255, 0.1);
+    --bagcolor-link-network: rgba(255, 255, 255, 0.1);
 }
 
 html {
@@ -334,13 +334,13 @@ body {
 }
 
 .team-item {
-    text-align: center;
-    width: 270px;
-}
-
-.team-item {
     margin-right: 30px;
     background-color: var(--secondary-color);
+    text-align: center;
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-item:last-child {
@@ -424,7 +424,6 @@ body {
     margin-top: 50px;
     width: 170px;
     height: 92px;
-    border-radius: 4px;
 }
 
 .client-link {
@@ -434,6 +433,7 @@ body {
     justify-content: center;
     align-items: center;
     border: 1px solid var(--client-border-color);
+    border-radius: 4px;
 }
 
 .client-link:hover .icon-color,
@@ -487,12 +487,18 @@ body {
 .button:focus {
     color: var(--secondary-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .network {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.network-link {
+    display: block;
 }
 
 .network-union {
@@ -531,6 +537,12 @@ body {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--p-text-color);
+}
+
+.network-link:hover,
+.network-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /*Стилізація футера*/
@@ -583,6 +595,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-left: 70px;
 }
 
 .network-contacts {
@@ -598,13 +611,13 @@ body {
     height: 44px;
 }
 
-.network-link {
+.link-network {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: var(--bagcolor-network-link);
+    background-color: var(--bagcolor-link-network);
     border-radius: 50%;
 }
 
@@ -612,7 +625,10 @@ body {
     fill: var(--secondary-color);
 }
 
-.network-link:hover,
-.network-link:focus {
+.link-network:hover,
+.link-network:focus {
     background-color: var(--accent-color);
+}
+.united-footer {
+    display: flex;
 }
