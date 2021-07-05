@@ -239,7 +239,6 @@ body {
 
 .plus-list {
     display: flex;
-    align-items: center;
 }
 
 .plus-list-menu {
@@ -330,7 +329,6 @@ body {
 
 .team-list {
     display: flex;
-    align-items: center;
 }
 
 .team-item {
@@ -418,10 +416,10 @@ body {
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
 .client-list {
-    margin-top: 50px;
     width: 170px;
     height: 92px;
 }
@@ -547,7 +545,6 @@ body {
 
 /*Стилізація футера*/
 .footer {
-    display: flex;
     background-color: var(--footer-color);
     padding-top: 60px;
     padding-bottom: 60px;
