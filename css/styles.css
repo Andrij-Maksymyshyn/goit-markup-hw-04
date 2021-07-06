@@ -159,7 +159,7 @@ body {
     margin-right: 10px;
 }
 
-.icon-color {
+.icon-header-color {
     fill: var(--p-text-color);
 }
 
@@ -186,6 +186,8 @@ body {
         ),
         url('../images/bagimage.jpg');
     background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
 }
 
 .hero-container {
@@ -327,6 +329,10 @@ body {
     background-color: var(--our-team-color);
 }
 
+.team-container {
+    padding-top: 94px;
+}
+
 .team-list {
     display: flex;
 }
@@ -368,12 +374,12 @@ body {
 .team-contacts {
     display: flex;
     justify-content: space-between;
+    margin-top: 16px;
 }
 
 .team-contacts-list {
     width: 44px;
     height: 44px;
-    margin-top: 16px;
 }
 
 .team-contacts-link {
@@ -391,8 +397,8 @@ body {
     background-color: var(--accent-color);
 }
 
-.team-contacts-link:hover .icon-color,
-.team-contacts-link:focus .icon-color {
+.team-contacts-link:hover .icon-main-color,
+.team-contacts-link:focus .icon-main-color {
     fill: var(--secondary-color);
 }
 
@@ -434,8 +440,12 @@ body {
     border-radius: 4px;
 }
 
-.client-link:hover .icon-color,
-.client-link:focus .icon-color {
+.icon-main-color {
+    fill: var(--client-border-color);
+}
+
+.client-link:hover .icon-main-color,
+.client-link:focus .icon-main-color {
     fill: var(--accent-color);
 }
 
@@ -598,14 +608,17 @@ body {
 .network-contacts {
     display: flex;
     justify-content: space-between;
-    width: 206px;
-    height: 44px;
     margin-top: 20px;
 }
 
 .network-list {
     width: 44px;
     height: 44px;
+    margin-right: 10px;
+}
+
+.network-list:last-child {
+    margin-right: 0;
 }
 
 .link-network {
@@ -618,7 +631,7 @@ body {
     border-radius: 50%;
 }
 
-.icon-network-color {
+.icon-footer-color {
     fill: var(--secondary-color);
 }
 
@@ -628,4 +641,5 @@ body {
 }
 .united-footer {
     display: flex;
+    align-items: baseline;
 }
